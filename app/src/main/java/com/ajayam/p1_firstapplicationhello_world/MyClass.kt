@@ -8,21 +8,15 @@ class MyClass {
             println("Hello world")
 
 //cannot change the value at runtime
-//            val aList = listOf("Raman", "ajay","anju","anjaali", listOf(1,2,3))
-//            println(aList)
+            val aSet = setOf("12", 1, "Raj", "Rahul")
 
-//
-            val mList = mutableListOf<Any>("Raman", "Rajeev")
-// update at runtime
-            mList.add(0, "Ramanujan")
-//  add at runtime
-            mList.add("Ajay")
-            mList.add(1)
+            println(aSet)
 
-            val mAList = mutableListOf("Pawan", false)
-            mList.addAll(mAList)
+// Addition on SET
+            val mSet = mutableSetOf("Raj", "Rajesh", 1, false)
 
-            println(mList)
+            mSet.add(true)
+            println(mSet)
 
         }
     }
