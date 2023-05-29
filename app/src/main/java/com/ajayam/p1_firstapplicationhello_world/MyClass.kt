@@ -6,18 +6,22 @@ class MyClass {
         fun main(args: Array<String>) {
             println("Hello world")
 
-            var num = 10;
+//            var (a,b) = Pair("a", 1)
+//            println("$a $b")
 
-//   while loop
-//            while (num<20){
-//                println("Num is: $num")
-//                num++;
-//            }
+// Two value store
+//            val name = Pair("Raman", Pair("Ramanujan", Pair("Ajayam", 1)))
+//            println("${name.first} ${name.second.second.first}")
 
-//   do-while loop
-            do {
-                println("Num is : $num")
-            } while (num>10)
+// Three value store
+//            val (x,y,z) = Triple("hello", "World", 1)
+//            println("$x $y $z")
+
+//            val number = Triple("hello", "World", 1)
+//            println("$number")
+
+            val number = Triple("hello", "World", Triple(1,Triple("a","b","c"),3))
+            println("${number.third.second}")
 
 
         }
