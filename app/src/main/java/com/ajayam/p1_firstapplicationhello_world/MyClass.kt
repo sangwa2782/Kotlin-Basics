@@ -5,64 +5,24 @@ class MyClass {
         @JvmStatic
         fun main(args: Array<String>) {
 
-            var num = 11
-// way of writing 1
-//            if (num > 100) {
-//                println("No is grater")
-//            } else {
-//                println("No is smaller")
-//            }
+            println("Hello world")
 
-// way of writing 2 ({} not important on if-else)
-//            if (num > 100)
-//                println("No is grater")
-//            else
-//                println("No is smaller")
+//cannot change the value at runtime
+//            val aList = listOf("Raman", "ajay","anju","anjaali", listOf(1,2,3))
+//            println(aList)
 
-// way of writing 3 (single if-else can write on single line)
-            var msg = ""
-            msg =  if (num > 100) "No is grater" else "No is smaller"
-            println(msg)
+//
+            val mList = mutableListOf<Any>("Raman", "Rajeev")
+// update at runtime
+            mList.add(0, "Ramanujan")
+//  add at runtime
+            mList.add("Ajay")
+            mList.add(1)
 
+            val mAList = mutableListOf("Pawan", false)
+            mList.addAll(mAList)
 
-// nested conditional
-            if(num>100){
-
-            } else if (num<70) {
-
-            } else if (num< 50) {
-
-            } else {
-
-            }
-
-// WHEN in place of switch condition
-            when(num){
-                1->{
-//                -> sign of equal to(=) eg. 1=num
-                }
-                100-> {
-
-                }
-            }
-
-// conditional operators used
-            when{
-                num>100 -> {
-
-                }
-                num<100->{
-
-                }
-                num==100->{
-
-                }
-                else -> {
-
-                }
-            }
-
-
+            println(mList)
 
         }
     }
