@@ -8,16 +8,15 @@ class MyClass {
             println("Hello world")
 
 //cannot change the value at runtime
-            val aSet = setOf("12", 1, "Raj", "Rahul")
+            val aMap = mapOf(1 to "Raman", 10 to  "Rahul", true to "check")
+            println(aMap)
 
-            println(aSet)
+            val mMap = mutableMapOf<Int, String>()
+            val mAMap = mutableMapOf(1 to "Raj", 12 to "Rohit", 11 to "Rajeev")
+            mMap.putAll(mAMap)
 
-// Addition on SET
-            val mSet = mutableSetOf("Raj", "Rajesh", 1, false)
-
-            mSet.add(true)
-            println(mSet)
-
+            mMap[1]="Raman"
+            println(mMap)
         }
     }
 }
