@@ -8,15 +8,16 @@ class MyClass {
             println("Hello world")
 
 //cannot change the value at runtime
-            val aMap = mapOf(1 to "Raman", 10 to  "Rahul", true to "check")
-            println(aMap)
+        val arrNames = ArrayList<String>()
+            arrNames.add("A")
+            arrNames.add("B")
 
-            val mMap = mutableMapOf<Int, String>()
-            val mAMap = mutableMapOf(1 to "Raj", 12 to "Rohit", 11 to "Rajeev")
-            mMap.putAll(mAMap)
+            arrNames[0]="Raman"
 
-            mMap[1]="Raman"
-            println(mMap)
+//            arrNames.remove("B")
+            arrNames.removeAt(1)
+
+            println(arrNames.toString())
         }
     }
 }
